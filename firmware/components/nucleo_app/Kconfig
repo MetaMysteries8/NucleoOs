@@ -110,4 +110,14 @@ config NUCLEO_STORE_GGEMU
 
 endmenu
 
+config NUCLEO_PICO8_PROTOTYPE
+    bool "Experimental FABLE-8 Pocket player (built in)"
+    default n
+    help
+        Native PICO-8 subset with a bounded Lua runtime and a playable demo.
+        No audio, saves or full PICO-8 dialect compatibility yet. Needs an SD
+        card and a Solo boot. Opt-in while original Cardputer memory/performance
+        is being validated. Adds flash use: always run tools/image-size-check.mjs
+        before attempting an update to an existing M5Launcher installation.
+
 endmenu

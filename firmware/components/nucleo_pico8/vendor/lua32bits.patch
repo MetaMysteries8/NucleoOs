@@ -1,0 +1,7 @@
+--- a/luaconf.h
++++ b/luaconf.h
+@@ -125 +125,3 @@
+-#define LUA_32BITS	0
++#ifndef LUA_32BITS /* Nucleo: allow the component to select 32-bit Lua numbers. */
++#define LUA_32BITS	0
++#endif

@@ -56,6 +56,7 @@
     "otalisten:test": "node tools/anima-host/ota-listen-check.mjs",
     "otaconfirm:test": "node tools/anima-host/ota-confirm-check.mjs",
     "ble:test": "node tools/anima-host/ble-check.mjs",
+    "pico8:test": "node tools/pico8-host/check.mjs",
     "mail:test": "node tools/anima-host/mail-check.mjs",
     "probe:test": "node tools/anima-host/probe-check.mjs",
     "eapol:test": "node tools/anima-host/eapol-check.mjs",

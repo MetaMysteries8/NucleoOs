@@ -469,6 +469,7 @@ extern "C" void nucleo_register_files(void);
 extern "C" void nucleo_register_photos(void);
 extern "C" void nucleo_register_player(void);
 extern "C" void nucleo_register_gbemu(void);
+extern "C" void nucleo_register_pico8(void);
 extern "C" void nucleo_register_ggemu(void);
 extern "C" void nucleo_register_video(void);
 extern "C" void nucleo_register_remote(void);
@@ -563,6 +564,9 @@ void nucleo_app_register_builtins(void)
     // Web OS: the two transports to the browser web OS — cable (usbweb) and LAN (remote)
     nucleo_register_usbweb(); nucleo_register_remote();
     // Games
+#if CONFIG_NUCLEO_PICO8_PROTOTYPE
+    nucleo_register_pico8();
+#endif
 #if !CONFIG_NUCLEO_STORE_REACTOR
     nucleo_register_reactor();
 #endif
