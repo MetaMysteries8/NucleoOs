@@ -1,0 +1,3 @@
+# Additional defaults for a FRESH, separate prototype configuration.
+# Combine with sdkconfig.defaults; do not overwrite an owner's existing sdkconfig.
+CONFIG_NUCLEO_PICO8_PROTOTYPE=y

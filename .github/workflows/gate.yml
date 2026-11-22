@@ -46,6 +46,9 @@ jobs:
         # not this fast portable CI gate.
         run: node --test tools/*.test.mjs
 
+      - name: FABLE-8 Pocket native subset (host-compiled C and Lua)
+        run: npm run pico8:test
+
       - name: Native release-update policy (host-compiled C)
         run: node tools/anima-host/update-check.mjs
 
